@@ -1,5 +1,7 @@
 ## Hello World! 👋
 
+![Anurag's GitHub stats](https://bad-apple-github-readme-stats-iqgosc8leg.vercel.app/api?username=CatFish1145&show_icons=true)
+
 <picture>
   <source
     media="(prefers-color-scheme: dark)"
