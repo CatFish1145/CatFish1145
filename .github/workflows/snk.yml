@@ -1,13 +1,15 @@
-name: snk
+name: github-contribution-snake
 on:
   schedule:
-    - cron: "0 */2 * * *"  # 每24小时运行一次
+    - cron: "0 */2 * * *"  # 每两小时触发
   workflow_dispatch:        # 允许手动触发
   push:
     branches: [main]       # 主分支提交时触发
 jobs:
   generate:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # 允许写入仓库内容
     steps:
       - name: Generate Snake
         uses: Platane/snk/svg-only@v3  # 使用v3版本
