@@ -1,0 +1,23 @@
+name: snk
+on:
+  schedule:
+    - cron: "0 */2 * * *"  # 每24小时运行一次
+  workflow_dispatch:        # 允许手动触发
+  push:
+    branches: [main]       # 主分支提交时触发
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate Snake
+        uses: Platane/snk/svg-only@v3  # 使用v3版本
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-snake.svg
+            dist/github-contribution-snake-dark.svg?palette=github-dark
+      - name: Push to Branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: main
+          build_dir: dist
