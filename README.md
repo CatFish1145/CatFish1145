@@ -1,6 +1,6 @@
 ## Hello World! 👋
 
-![Anurag's GitHub stats](https://bad-apple-github-readme-stats-iqgosc8leg.vercel.app/api?username=CatFish1145&show_icons=true)
+![](https://bad-apple-github-readme-stats-iqgosc8leg.vercel.app/api?show_bg=1&username=CatFish1145&show_icons=true)
 
 <picture>
   <source
