@@ -12,6 +12,8 @@ jobs:
       contents: write  # 允许写入仓库内容
     steps:
       - name: Generate Snake
+        env:
+          $GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         uses: Platane/snk/svg-only@v3  # 使用v3版本
         with:
           github_user_name: ${{ github.repository_owner }}
@@ -19,6 +21,8 @@ jobs:
             dist/github-contribution-snake.svg
             dist/github-contribution-snake-dark.svg?palette=github-dark
       - name: Push to Branch
+        env:
+          $GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: main
