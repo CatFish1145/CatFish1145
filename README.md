@@ -1,4 +1,4 @@
-## Hi there 👋dddd
+## Hi there 👋
 
 <!--
 **CatFish1145/CatFish1145** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
