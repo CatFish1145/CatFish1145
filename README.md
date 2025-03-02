@@ -1,7 +1,6 @@
 ## Hello World! 👋
 
-<img src="https://bad-apple-github-readme.vercel.app/api?show_bg=1&username=CatFish1145">
-<img src="https://bad-apple-github-readme.vercel.app/api?show_bg=1&username=moepoi">
+<img src="https://catfishs-badapple-readme-stats.vercel.app/api?username=catfish1145&show_icons=true&theme=light&show_bg=1&include_all_commits=true">
 
 <picture>
   <source
